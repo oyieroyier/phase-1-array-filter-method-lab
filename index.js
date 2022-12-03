@@ -1,5 +1,5 @@
 // Code your solution here
-const users = ["Bobby", "salim", "Mikey", "Peter", "Bobby", "Salim"];
+const users = ["Bobby", "salim", "Mikey", "Peter", "bobby", "Salim"];
 
 function findMatching(array, string) {
   let newArray = array.filter((input) =>
@@ -8,7 +8,7 @@ function findMatching(array, string) {
   return newArray;
 }
 
-console.log(findMatching(users, "salim"));
+console.log(findMatching(users, "bobby"));
 
 function fuzzyMatch(array, string) {
   let newArray = array.filter((input) => input.startsWith(string[0]));
@@ -16,6 +16,6 @@ function fuzzyMatch(array, string) {
 }
 
 function matchName(array, string) {
-  let newArray = array.filter(input => input.name === string)
-  return newArray
+  let newArray = array.filter((input) => input.name === string);
+  return newArray;
 }
